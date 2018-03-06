@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x= 0;
+        var y= 1;
+        var z = 0;
+        var fab_array = [0,1];
+
+        for(;z<100;){
+        z = x+y;
+        x = y;
+        y = z;  
+        fab_array.push(z);
+        //   console.log(z);
+        }
+        fab_array.pop();
+
+        console.log(fab_array);
+    </script>
+</body>
+</html>
